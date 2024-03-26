@@ -1,5 +1,5 @@
 #!/bin/bash
-#Author:wakamizulee
+#Author:wakamizu
 #Website:www.wakamizu.cn
 #describe:备份mysql数据库，成功后删除两天前的备份文件
 
