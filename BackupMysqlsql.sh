@@ -1,4 +1,7 @@
 #!/bin/bash
+#Author:wakamizulee
+#Website:www.wakamizu.cn
+#describe:备份mysql数据库，成功后删除两天前的备份文件
 
 #mysql连接信息
 DB_USER=""
@@ -6,7 +9,7 @@ DB_PASSWORD=""
 #如果DB_NAME为空，则备份全部
 DB_NAME="" 
 
-#备份目录
+#备份路径
 BACKUP_DIR="/backups/"
 
 #获取当前日期
