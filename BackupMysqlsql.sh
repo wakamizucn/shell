@@ -13,7 +13,7 @@ DB_NAME=""
 BACKUP_DIR="/backups/"
 
 #获取当前日期
-CURRENT_DATE=$(date +"%Y%m%d")
+CURRENT_DATE=$(date +"%Y%m%d_%H%M%S")
 
 if [ -z "$DB_NAME" ]; then
     DB_NAME="--all-databases"
@@ -26,7 +26,7 @@ if [ $? -eq 0 ]; then
     echo "mysql backup completed successfully."
     # 如果成功备份删除两天前的备份文件
     TWO_DAYS_AGO=$(date -d "2 days ago" +"%Y%m%d")
-    rm -f "$BACKUP_DIR/mysqlbak.$TWO_DAYS_AGO.sql"
+    rm -f "$BACKUP_DIR/mysqlbak.$TWO_DAYS_AGO"*.sql
     echo "2 days ago old backup file deleted."
 else
     echo "mysql backup failed."
