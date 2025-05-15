@@ -8,7 +8,8 @@
 DB_USER="root"
 DB_PASSWORD=""
 # 如果DB_NAME为空数组，则备份全部数据库
-DB_NAME=("employees" "test")  # 如需备份所有数据库请留空：DB_NAME=()
+# DB_NAME=("test1" "test2")  
+# 如需备份所有数据库请留空：DB_NAME=()
  
 # 备份路径
 BACKUP_DIR="/backups/"
